@@ -8663,7 +8663,7 @@ body {
 }
 
 [data-testid="chat-view"] {
-  line-height: 21px;
+  --line-height-mod: 26px;
   --vscode-font-family: var(--vscode-editor-font-family);
   letter-spacing: 1px;
 }
@@ -8672,7 +8672,7 @@ body {
 [data-testid="chat-view"] li,
 [data-testid="chat-view"] pre,
 [data-testid="chat-view"] pre code {
-  line-height: 21px !important;
+  line-height: var(--line-height-mod) !important;
 }
 
 [data-testid="chat-view"] pre,
