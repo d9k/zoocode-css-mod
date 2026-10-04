@@ -8656,3 +8656,8 @@ input[cmdk-input]:focus {
 }
 
 /*$vite$:1*/
+
+body {
+  /** Increases code block font size: */
+  --vscode-font-size: 18px;
+}
