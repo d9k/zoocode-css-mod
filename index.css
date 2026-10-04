@@ -8659,5 +8659,23 @@ input[cmdk-input]:focus {
 
 body {
   /** Increases code block font size: */
-  --vscode-font-size: 18px;
+  --vscode-font-size: 16px;
+}
+
+[data-testid="chat-view"] {
+  line-height: 21px;
+  --vscode-font-family: var(--vscode-editor-font-family);
+  letter-spacing: 1px;
+}
+
+[data-testid="chat-view"] p,
+[data-testid="chat-view"] li,
+[data-testid="chat-view"] pre,
+[data-testid="chat-view"] pre code {
+  line-height: 21px !important;
+}
+
+[data-testid="chat-view"] pre,
+[data-testid="chat-view"] pre code {
+  font-size: inherit !important;
 }
