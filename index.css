@@ -8679,3 +8679,8 @@ body {
 [data-testid="chat-view"] pre code {
   font-size: inherit !important;
 }
+
+[data-testid="chat-view"] .group .bg-vscode-editor-foreground\/70 {
+  background-color: #000;
+  color: #0c7;
+}
