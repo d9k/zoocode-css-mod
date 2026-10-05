@@ -8661,11 +8661,13 @@ body {
   /** Increases code block font size: */
   /* --vscode-font-size: 16px; */
   /* --zoo-chat-font-size: 16px; */
-  --vscode-font-size: var(--editor-font-size);
-  --zoo-chat-font-size: var(--editor-font-size);
 }
 
 [data-testid="chat-view"] {
+  /* --vscode-font-size: var(--editor-font-size) !important; */
+  /* --zoo-chat-font-size: var(--editor-font-size) !important; */
+  --vscode-font-size: var(--vscode-editor-font-size);
+  --zoo-chat-font-size: var(--vscode-editor-font-size);
   --line-height-mod: 26px;
   --vscode-font-family: var(--vscode-editor-font-family);
   /* --vscode-font-family: "Ubuntu Mono"; */
