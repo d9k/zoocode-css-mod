@@ -8668,23 +8668,22 @@ body {
   /* --zoo-chat-font-size: var(--editor-font-size) !important; */
   --vscode-font-size: var(--vscode-editor-font-size);
   --zoo-chat-font-size: var(--vscode-editor-font-size);
-  --line-height-mod: 26px;
-  --vscode-font-family: var(--vscode-editor-font-family);
+  /* --vscode-font-family: var(--vscode-editor-font-family); */
+  --line-height-mod: 30px;
   /* --vscode-font-family: "Ubuntu Mono"; */
   letter-spacing: 1px;
 }
 
 [data-testid="chat-view"] p,
 [data-testid="chat-view"] li,
-[data-testid="chat-view"] pre,
-[data-testid="chat-view"] pre code {
-  line-height: var(--line-height-mod) !important;
-}
-
+[data-testid="chat-view"] table,
 [data-testid="chat-view"] pre,
 [data-testid="chat-view"] pre code,
-[data-testid="chat-view"] code:not(pre > code){
-  font-size: inherit !important;
+[data-testid="chat-view"] code:not(pre > code),
+[data-testid="chat-view"] [title="Click to edit message"] {
+  font-family: var(--vscode-editor-font-family) !important;
+  font-size: var(--vscode-editor-font-size) !important;
+  line-height: var(--line-height-mod) !important;
 }
 
 [data-testid="chat-view"] h2 {
@@ -8696,4 +8695,5 @@ body {
 [data-testid="chat-view"] .group .bg-vscode-editor-foreground\/70 {
   background-color: #000;
   color: #0c7;
+
 }
