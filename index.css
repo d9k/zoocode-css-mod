@@ -8659,12 +8659,16 @@ input[cmdk-input]:focus {
 
 body {
   /** Increases code block font size: */
-  --vscode-font-size: 16px;
+  /* --vscode-font-size: 16px; */
+  /* --zoo-chat-font-size: 16px; */
+  --vscode-font-size: var(--editor-font-size);
+  --zoo-chat-font-size: var(--editor-font-size);
 }
 
 [data-testid="chat-view"] {
   --line-height-mod: 26px;
   --vscode-font-family: var(--vscode-editor-font-family);
+  /* --vscode-font-family: "Ubuntu Mono"; */
   letter-spacing: 1px;
 }
 
@@ -8676,8 +8680,15 @@ body {
 }
 
 [data-testid="chat-view"] pre,
-[data-testid="chat-view"] pre code {
+[data-testid="chat-view"] pre code,
+[data-testid="chat-view"] code:not(pre > code){
   font-size: inherit !important;
+}
+
+[data-testid="chat-view"] h2 {
+    font-size: 180%;
+    font-weight: 500;
+    color: #aa9fc3;
 }
 
 [data-testid="chat-view"] .group .bg-vscode-editor-foreground\/70 {
