@@ -8657,6 +8657,8 @@ input[cmdk-input]:focus {
 
 /*$vite$:1*/
 
+/** MOD begin */
+
 body {
   /** Increases code block font size: */
   /* --vscode-font-size: 16px; */
@@ -8680,7 +8682,8 @@ body {
 [data-testid="chat-view"] pre,
 [data-testid="chat-view"] pre code,
 [data-testid="chat-view"] code:not(pre > code),
-[data-testid="chat-view"] [title="Click to edit message"] {
+[data-testid="chat-view"] [title="Click to edit message"], 
+[data-testid="chat-view"] [placeholder="Type a message..."] {
   font-family: var(--vscode-editor-font-family) !important;
   font-size: var(--vscode-editor-font-size) !important;
   line-height: var(--line-height-mod) !important;
@@ -8692,8 +8695,11 @@ body {
     color: #aa9fc3;
 }
 
+[data-testid="chat-view"] h2 {
+}
+
 [data-testid="chat-view"] .group .bg-vscode-editor-foreground\/70 {
   background-color: #000;
   color: #0c7;
-
 }
+
